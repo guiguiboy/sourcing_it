@@ -1,3 +1,7 @@
 sourcing_it_site_homepage:
     pattern:  /hello/{name}
     defaults: { _controller: SourcingItSiteBundle:Default:index }
+
+sourcing_it_site_dashboard:
+    pattern:  /dashboard
+    defaults: { _controller: SourcingItSiteBundle:Default:dashboard }

@@ -10,4 +10,9 @@ class DefaultController extends Controller
     {
         return $this->render('SourcingItSiteBundle:Default:index.html.twig', array('name' => $name));
     }
+    
+    public function dashboardAction()
+    {
+    	return $this->render('SourcingItSiteBundle:Default:dashboard.html.twig');
+    }
 }
