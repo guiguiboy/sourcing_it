@@ -33,15 +33,15 @@ How to install
         sudo a2ensite sourcing_it
         sudo service apache2 restart
  
-  * add sourcing_it.local in your host file
+ * add sourcing_it.local in your host file
   
-  * set permissions on log + cache directory 
+ * set permissions on log + cache directory 
   
-  * configure database information in app/parameters.yml
+ * configure database information in app/parameters.yml
   
-  * create database and schema
+ * create database and schema
         php app/console doctrine:database:create
         php app/console doctrine:schema:create
   
-  * access to the front dev url : http://sourcing-it.local/app_dev.php
+ * access to the front dev url : http://sourcing-it.local/app_dev.php
   
