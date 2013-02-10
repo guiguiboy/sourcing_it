@@ -1,0 +1,7 @@
+parameters:
+#    sourcing_it_site.example.class: SourcingIt\SiteBundle\Example
+
+services:
+#    sourcing_it_site.example:
+#        class: %sourcing_it_site.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
