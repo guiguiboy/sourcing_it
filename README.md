@@ -36,6 +36,11 @@ How to install
  * add sourcing_it.local in your host file
   
  * set permissions on log + cache directory 
+ 
+ * install dependies via composer
+        cd Symfony
+        curl -s https://getcomposer.org/installer | php
+        php composer.phar install
   
  * configure database information in app/parameters.yml
   
