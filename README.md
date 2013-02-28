@@ -50,4 +50,6 @@ How to install
         php app/console doctrine:schema:create
   
  * access to the front dev url : http://sourcing-it.local/app_dev.php
-  
+
+ * Note : permissions are not configured with ACLs but with umask. This will be changed later.
+
