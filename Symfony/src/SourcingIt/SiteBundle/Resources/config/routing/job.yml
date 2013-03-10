@@ -1,0 +1,30 @@
+SourcingItSiteBundle_job:
+    pattern:  /
+    defaults: { _controller: "SourcingItSiteBundle:Job:index" }
+
+SourcingItSiteBundle_job_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "SourcingItSiteBundle:Job:show" }
+
+SourcingItSiteBundle_job_new:
+    pattern:  /new
+    defaults: { _controller: "SourcingItSiteBundle:Job:new" }
+
+SourcingItSiteBundle_job_create:
+    pattern:  /create
+    defaults: { _controller: "SourcingItSiteBundle:Job:create" }
+    requirements: { _method: post }
+
+SourcingItSiteBundle_job_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "SourcingItSiteBundle:Job:edit" }
+
+SourcingItSiteBundle_job_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "SourcingItSiteBundle:Job:update" }
+    requirements: { _method: post }
+
+SourcingItSiteBundle_job_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "SourcingItSiteBundle:Job:delete" }
+    requirements: { _method: post }

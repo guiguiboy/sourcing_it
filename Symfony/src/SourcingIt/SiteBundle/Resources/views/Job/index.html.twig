@@ -1,0 +1,53 @@
+<h1>Job list</h1>
+
+<table class="records_list">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Created_at</th>
+            <th>Company_id</th>
+            <th>Status</th>
+            <th>Source</th>
+            <th>Contact_name</th>
+            <th>Contact_email</th>
+            <th>Contact_phone</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for entity in entities %}
+        <tr>
+            <td><a href="{{ path('SourcingItSiteBundle_job_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+            <td>{{ entity.name }}</td>
+            <td>{{ entity.description }}</td>
+            <td>{% if entity.createdat %}{{ entity.createdat|date('Y-m-d H:i:s') }}{% endif %}</td>
+            <td>{{ entity.companyid }}</td>
+            <td>{{ entity.status }}</td>
+            <td>{{ entity.source }}</td>
+            <td>{{ entity.contactname }}</td>
+            <td>{{ entity.contactemail }}</td>
+            <td>{{ entity.contactphone }}</td>
+            <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('SourcingItSiteBundle_job_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('SourcingItSiteBundle_job_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<ul>
+    <li>
+        <a href="{{ path('SourcingItSiteBundle_job_new') }}">
+            Create a new entry
+        </a>
+    </li>
+</ul>

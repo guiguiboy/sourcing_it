@@ -5,3 +5,7 @@ sourcing_it_site_homepage:
 sourcing_it_site_dashboard:
     pattern:  /dashboard
     defaults: { _controller: SourcingItSiteBundle:Default:dashboard }
+    
+SourcingItSiteBundle_job:
+    resource: "@SourcingItSiteBundle/Resources/config/routing/job.yml"
+    prefix:   /job

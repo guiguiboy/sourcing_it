@@ -21,7 +21,17 @@
         "kriswallsmith/assetic": "1.1.*@dev",
         "friendsofsymfony/user-bundle": "*",
         "doctrine/data-fixtures" : "dev-master",
-        "doctrine/doctrine-fixtures-bundle": "dev-master"
+        "doctrine/doctrine-fixtures-bundle": "dev-master",
+        
+        "sonata-project/admin-bundle": "2.1.x-dev",
+        "sonata-project/doctrine-orm-admin-bundle": "2.1.x-dev",
+        "sonata-project/jquery-bundle": "2.1.x-dev",
+        "sonata-project/exporter": "2.1.x-dev",
+        "sonata-project/block-bundle": "2.1.x-dev",
+        "sonata-project/intl-bundle": "2.1.x-dev",
+        "sonata-project/jquery-bundle": "1.8.3",
+        "sonata-project/exporter": "1.*",
+        "knplabs/knp-menu-bundle": "1.1.x-dev"
     },
     "scripts": {
         "post-install-cmd": [
