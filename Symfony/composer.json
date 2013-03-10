@@ -31,6 +31,7 @@
         "sonata-project/intl-bundle": "2.1.x-dev",
         "sonata-project/jquery-bundle": "1.8.3",
         "sonata-project/exporter": "1.*",
+        "sonata-project/easy-extends-bundle": "2.1.x-dev",
         "knplabs/knp-menu-bundle": "1.1.x-dev"
     },
     "scripts": {
